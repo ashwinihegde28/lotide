@@ -10,7 +10,7 @@
   let mismatch = `${sadSmiley} Assertion Failed: ${actual}  !== ${expected}`;
   (actual === expected) ? console.log(match) : console.log(mismatch);
     
-};*/
+};
 
 const tail = (array) => array.slice(1);
 
@@ -29,5 +29,9 @@ const compEquality = (array1,array) => {
   console.log("Both array matched");
   return true;
 };
-compEquality(['af','3z','cr'],['bz','cr']);
+compEquality(['af','3z','cr'],['bz','cr']);*/
+
+console.log(friend);
+var friend = 'E.T.';
+console.log(friend);
   
