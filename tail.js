@@ -1,3 +1,5 @@
+// import assertEqual function
+const assertEqual = require('../assertEqual');
 /*function assertEqual(actual, expected) {
     
   if (isNaN(actual) || expected.length < 0  || actual.length < 0 || isNaN(expected)) {
@@ -10,7 +12,7 @@
   let mismatch = `${sadSmiley} Assertion Failed: ${actual}  !== ${expected}`;
   (actual === expected) ? console.log(match) : console.log(mismatch);
     
-};
+};*/
 
 const tail = (array) => array.slice(1);
 
@@ -29,9 +31,7 @@ const compEquality = (array1,array) => {
   console.log("Both array matched");
   return true;
 };
-compEquality(['af','3z','cr'],['bz','cr']);*/
+//assertEqual(compEquality(['af','3z','cr'],['bz','cr']));
 
-console.log(friend);
-var friend = 'E.T.';
-console.log(friend);
-  
+
+module.export = tail;

@@ -19,8 +19,11 @@ const assertArraysEqual = function(actual , expected) {
   // include template literal to display
   let match = `${happySmiley} Assertion Passed: ${actual} == ${expected}`;
   let misMatch = `${sadSmiley} Assertion Failed: ${actual}  !== ${expected}`;
-  (isEqual) ? match : misMatch;
+  (isEqual) ? console.log(match) : console.log(misMatch);
 };
 
-assertArraysEqual([5,6,7] , [5,6,7]);
-assertArraysEqual(['a','b'] , ['a','c']);
+/*assertArraysEqual([5,6,7] , [5,6,7]);
+assertArraysEqual(['a','b'] , ['a','c']);*/
+
+
+module.exports = assertArraysEqual;
