@@ -31,10 +31,11 @@ const eqObjects = function(object1, object2) {
   for (let key of keys1) {
     const val1 = object1[key];
     const val2 = object2[key];
-    if (Array.isArray(val1) && Array.isArray(val2)) {  // values are itself array of elements check each element
+    // values are itself array of elements check each element
+    if (Array.isArray(val1) && Array.isArray(val2)) {  
       return eqArrays(val1 , val2);
     }
-    if (val1 !== val2) { // value is primitive use "==="
+    if (val1 !== val2) { 
       return false;
     }
   }

@@ -13,10 +13,13 @@ const countLetters = function(sentence) {
   console.log();
   const result = {};
   for (let alpha of sentence) {
-    if (alpha !== " ") { // Filters the spaces in the string
-      if (result[alpha]) { // If the alphabet has already been counted, adds 1 to the count
+    // Filters the spaces in the string
+    if (alpha !== " ") { 
+        // If the alphabet has already been counted, adds 1 to the count
+      if (result[alpha]) { 
         result[alpha] += 1;
-      } else { // If the alphabet doesn't exist in the result object, creates it
+        // If the alphabet doesn't exist in the result object, creates it
+      } else { 
         result[alpha] = 1;
       }
     }

@@ -16,8 +16,6 @@ const findKey = function(object , callback) {
   let matchedKey = undefined;
   // get the keys from the object
   for (let item in object) {
-    //console.log(item);  // prints key, here Blue Hill etc
-    //console.log(object[item]); //prints value associated with key , here {stars: 1}, {stars: 2}.......as  loops
     if (callback(object[item])) {
       return item;
     }

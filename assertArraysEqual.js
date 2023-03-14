@@ -22,8 +22,4 @@ const assertArraysEqual = function(actual , expected) {
   (isEqual) ? console.log(match) : console.log(misMatch);
 };
 
-/*assertArraysEqual([5,6,7] , [5,6,7]);
-assertArraysEqual(['a','b'] , ['a','c']);*/
-
-
 module.exports = assertArraysEqual;

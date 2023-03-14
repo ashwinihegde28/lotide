@@ -13,11 +13,8 @@ const assertEqual = function(actual, expected) {
 // If no key with that given value is found, then it should return undefined.
 const findKeyByValue = function(object, value) {
   // compare object.key contains value  if so pass the key to calling function using for loop
-  /*for (key of Object.keys(object)){
-        console.log(key.);
-       
-    }*/
-  for (let id in object) { // here id refers to key
+  
+  for (let id in object) { // here id refers to key not value
     if (object[id] === value) {
       return id;
     }

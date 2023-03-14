@@ -40,16 +40,5 @@ module.exports = {
 
 };
 
-/*module.exports = {
-  head:   head,
-  tail:   tail,
-  middle: middle,
-};*/
 
-/*const age = 33;
-
-const person = {
-  name: 'Pat',
-  age
-};*/
 
